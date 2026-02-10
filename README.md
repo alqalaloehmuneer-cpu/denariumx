@@ -41,23 +41,76 @@ Blocks, issuance, and monetary state transitions are valid **only** when produce
 
 ---
 
-## How It Works (High-Level)
+enariumX
 
-1. The system initializes and anchors to atomic time.
-2. A genesis block is created with an immutable timestamp.
-3. For each new block:
-   - Elapsed real time since the last block is calculated.
-   - Block creation is allowed **only if the time window is satisfied**.
-4. Candidate blocks undergo:
-   - Temporal deviation checks
-   - Validator approval (≥ 2/3 quorum)
-5. Any temporal violation results in:
-   - Block invalidation
-   - Permanent block burn
-   - Immutable logging of the violation
+DenariumX is a time-governed monetary protocol in which temporal correctness is a prerequisite for monetary validity.
 
----
+Unlike conventional monetary or blockchain systems, DenariumX treats time not as a configurable parameter, but as an enforceable protocol-level constraint.
 
+Value cannot be created, validated, or preserved if time is violated.
+
+Core Idea
+
+Most monetary systems tolerate temporal inconsistencies such as:
+
+Delayed issuance
+
+Timestamp drift
+
+Retrospective validation
+
+DenariumX explicitly rejects this model.
+
+If time is violated, value must not survive.
+
+Blocks, issuance events, and monetary state transitions are considered valid only when produced within strict, protocol-defined time windows anchored to external atomic time sources.
+
+Key Principles
+Time as a Validity Condition
+
+Monetary units are valid only if created at the correct, externally verifiable time.
+
+External Atomic Time Anchoring
+
+Time is sourced externally and independently — not from validators, miners, or local system clocks.
+
+Deterministic Issuance
+
+Issuance follows fixed and non-negotiable time intervals (e.g., ≥ 60 seconds).
+
+Automatic Enforcement
+
+Temporal rules are enforced mechanically by the protocol, without discretionary overrides or governance intervention.
+
+Burn as Penalty, Not Policy
+
+Block destruction is a direct response to temporal violation, not a monetary supply management tool.
+
+How It Works (High-Level)
+
+The system initializes and anchors itself to external atomic time.
+
+A genesis block is created with an immutable timestamp.
+
+For each subsequent block:
+
+Elapsed real time since the previous block is calculated.
+
+Block creation is permitted only if the protocol’s time window is satisfied.
+
+Candidate blocks undergo:
+
+Temporal deviation checks
+
+Validator approval (≥ 2/3 quorum)
+
+Any detected temporal violation results in:
+
+Immediate block invalidation
+
+Permanent block burn
+
+Immutable logging of the violation
 ## Repository Structure
 
 
