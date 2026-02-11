@@ -134,11 +134,8 @@ MAJOR.MINOR.PATCH
 Current version: v0.1.0
 ---
 
-## Master Architecture
 
-![Master Architecture](diagrams/master_architecture.svg)
 
----
 
 ## Master Architecture
 
