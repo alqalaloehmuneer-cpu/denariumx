@@ -132,4 +132,9 @@ MAJOR.MINOR.PATCH
 - PATCH: Editorial or clarification updates
 
 Current version: v0.1.0
+---
+
+## Master Architecture
+
+![Master Architecture](diagrams/master_architecture.svg)
 
