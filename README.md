@@ -138,3 +138,8 @@ Current version: v0.1.0
 
 ![Master Architecture](diagrams/master_architecture.svg)
 
+---
+
+## Master Architecture
+
+![Master Architecture](diagrams/master_architecture.svg)
