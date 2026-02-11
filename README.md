@@ -1,5 +1,11 @@
 # DenariumX
 
+**Protocol Version: v0.1.0**
+
+Current Status: Initial Formal Specification
+
+# DenariumX
+
 **DenariumX** is a time-governed monetary protocol in which **temporal correctness is a prerequisite for monetary validity**.  
 Unlike conventional monetary or blockchain systems, DenariumX treats time not as a parameter, but as an **enforceable constraint**.
 
@@ -113,4 +119,17 @@ Permanent block burn
 Immutable logging of the violation
 ## Repository Structure
 
+---
+
+## Versioning
+
+DenariumX follows semantic versioning:
+
+MAJOR.MINOR.PATCH
+
+- MAJOR: Breaking protocol changes
+- MINOR: Backward-compatible rule additions
+- PATCH: Editorial or clarification updates
+
+Current version: v0.1.0
 
