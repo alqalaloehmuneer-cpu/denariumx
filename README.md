@@ -4,7 +4,6 @@
 
 Current Status: Initial Formal Specification
 
-# DenariumX
 
 **DenariumX** is a time-governed monetary protocol in which **temporal correctness is a prerequisite for monetary validity**.  
 Unlike conventional monetary or blockchain systems, DenariumX treats time not as a parameter, but as an **enforceable constraint**.
